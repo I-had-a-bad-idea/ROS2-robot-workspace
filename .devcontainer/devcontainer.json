@@ -1,0 +1,32 @@
+{
+    "name": "ROS 2 Jazzy",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+
+    "workspaceFolder": "/ros2_ws",
+
+    "mounts": [
+        "source=${localWorkspaceFolder}/ros2_ws,target=/ros2_ws,type=bind"
+    ],
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-iot.vscode-ros",
+                "ms-vscode.cpptools",
+                "ms-python.python",
+                "twxs.cmake"
+            ]
+        }
+    },
+
+    "remoteUser": "root",
+
+    "postCreateCommand": "rosdep update",
+
+    "containerEnv": {
+        "ROS_DISTRO": "jazzy"
+    }
+}
