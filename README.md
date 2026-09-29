@@ -8,4 +8,6 @@ Select "Dev Containers: Reopen in Container"
 Now your VSCode terminal should be inside the container (will take a lot of time the first time)
 
 
+> https://docs.ros.org/en/jazzy/Installation.html#installation
+
 `ros2_ws` is the development workspace inside Linux.
