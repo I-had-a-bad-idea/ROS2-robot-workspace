@@ -24,5 +24,7 @@ WORKDIR /ros2_ws
 
 # Automatically source ROS 2 for every shell
 RUN echo "source /opt/ros/jazzy/setup.bash" >> /root/.bashrc
+# TODO: reactivate once pkg is created
+# RUN echo "source /ros2_ws/install/setup.bash 2>/dev/null || true" >> /root/.bashrc
 
 CMD ["bash"]
